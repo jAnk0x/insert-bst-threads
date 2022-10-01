@@ -39,7 +39,6 @@ void insertIntoTree(Tree* t, int val) {
         prev = cur;
 
         pthread_mutex_lock(&cur->lock);
-
         if (cur->val > val) {
             cur = cur->left;
         } else {
